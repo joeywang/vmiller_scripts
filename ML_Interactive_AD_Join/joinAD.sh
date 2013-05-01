@@ -93,9 +93,9 @@ sleep 1
 # Set AD Search Policy
 echo Configuring Search Policy...
 dscl /Search -create / SearchPolicy CSPSearchPath
-dscl /Search -append / CSPSearchPath "/Active Directory/CORP/All Domains"
+dscl /Search -append / CSPSearchPath "/Active Directory/yourdomain/All Domains"
 dscl /Search/Contacts -create / SearchPolicy CSPSearchPath
-dscl /Search/Contacts -append / CSPSearchPath "/Active Directory/CORP/All Domains"
+dscl /Search/Contacts -append / CSPSearchPath "/Active Directory/yourdomain/All Domains"
 
 ###########################################################################
 # Add Mobile Accounts
